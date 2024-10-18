@@ -387,7 +387,7 @@ while True:
                             time.sleep(0.3)
                         if GPIO.input(KEY_PRESS_PIN) == 0:
                             show_message("You are here", 1)
-                            os.system("sudo palera1n -l")
+                            os.system("sudo palera1n -cf")
                             show_image("ijb/DFU0.png", lambda: GPIO.input(KEY2_PIN) == 0)
                             time.sleep(3)
                             show_image("ijb/DFU1.png", time.sleep(5))
