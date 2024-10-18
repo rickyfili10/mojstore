@@ -187,7 +187,7 @@ def returner():
 
 def draw_menu(selected_index):
     draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-    menu_options = ["What is this?", "Jailbreak" "Exit"]
+    menu_options = ["What is this?", "Jailbreak", "Exit"]
     for i, option in enumerate(menu_options):
         y = i * 20
         if i == selected_index:
@@ -201,7 +201,7 @@ def draw_menu(selected_index):
     disp.LCD_ShowImage(image, 0, 0)
 
 def draw_sub_menu(selected_index):
-    sub_menu_options = ["What is this?", "Jailbreak" "Exit"]
+    sub_menu_options = ["What is this?", "Jailbreak", "Exit"]
     draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
     for i, option in enumerate(sub_menu_options):
         y = i * 20
